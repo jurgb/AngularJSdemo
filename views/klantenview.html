@@ -1,0 +1,14 @@
+<div ng-controller='KlantenController' ng-init="index()" >
+        <p>Searchtag:</p>
+        <input ng-model="searchText" type="text" />
+        {{ searchText }}
+        
+        
+        <h1>Klanten:</h1>
+        <ul ng-repeat="klant in klanten |filter: searchText ">
+            <li>{{klant}}</li>
+            <li></li>
+        </ul>
+        
+        
+    </div>
