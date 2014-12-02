@@ -6,9 +6,7 @@
         
         <h1>Klanten:</h1>
         <ul ng-repeat="klant in klanten |filter: searchText ">
-            <li>{{klant}}</li>
-            <li></li>
+            <li><a href="#/details/{{klant.id}}">{{klant.name}}</a></li>
+            <li>{{klant.email}}</li>
         </ul>
-        
-        
     </div>
