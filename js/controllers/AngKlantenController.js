@@ -1,17 +1,15 @@
-app.controller('KlantenController', function($scope, KlantenAPI){
+app.controller('KlantenController', function($scope){
         $scope.klanten = [
-//            {"id": 1, "name":"Jef", "totaal": 560},
-//            {"id": 2, "name":"Katrien", "totaal": 230},
-//            {"id": 3, "name":"Vicky", "totaal": 760},
-//            {"id": 4, "name":"Jurgen", "totaal": 40}
+            {"id": 1, "naam":"Jef", "totaal": 560},
+            {"id": 2, "naam":"Katrien", "totaal": 230},
+            {"id": 3, "naam":"Vicky", "totaal": 760},
+            {"id": 4, "naam":"Jurgen", "totaal": 40}
         ];
 
-        $scope.index = function(){
-          //Alle notifications binnehalen en in scope stoppen
-            KlantenAPI.index()
-                .success(function(data){
-                    $scope.klanten = data;
-                });
-
-        };
+//        $scope.index = function(){
+//            KlantenAPI.index()
+//                .success(function(data){
+//                    $scope.klanten = data;
+//                });
+//        };
     });
