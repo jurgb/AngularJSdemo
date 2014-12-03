@@ -1,12 +1,13 @@
 <div ng-controller='KlantenController' ng-init="index()" >
-        <p>Searchtag:</p>
-        <input ng-model="searchText" type="text" />
-        {{ searchText }}
-        
-        
-        <h1>Klanten:</h1>
-        <ul ng-repeat="klant in klanten |filter: searchText ">
-            <li><a href="#/details/{{klant.id}}">{{klant.name}}</a></li>
-            <li>{{klant.email}}</li>
-        </ul>
+        <div id="filter" class="col-md-4">
+            <h3>Zoek een klant:</h3>
+            <input ng-model="searchText" class="form-control" type="text" />
+<!--            {{ searchText }}-->
+        </div>
+        <div class="klantenviewwrapper col-md-8">
+            <ul class=" klantenoverzicht col-md-4" ng-repeat="klant in klanten |filter: searchText ">
+                <li><a href="#/details/{{klant.id}}">{{klant.name}}</a></li>
+                <li>{{klant.email}}</li>
+            </ul>
+        </div>
     </div>

@@ -1,0 +1,47 @@
+#header,
+#footer
+{
+    background: #569daf;
+    padding-left: 35%;
+}
+#footer img{
+     width: 60px;
+    height: 60px;
+}
+#footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+}
+#header h1,
+#footer h5{
+    color: #fff; 
+    display: inline-block;
+    text-align:center;
+}
+
+.klantenoverzicht
+{
+    display: inline-block;
+    border: 1px solid #dedede;
+    padding: 15px;
+}
+
+#filter
+{
+    background: #569daf;
+    margin-top: 50px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    color: #fff;
+}
+.klantenviewwrapper{
+    text-align: center;
+    margin-top: 5%;
+}
+
+span.tab{
+    padding: 0 30px; /* Or desired space*/
+}

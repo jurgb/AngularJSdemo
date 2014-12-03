@@ -1,8 +1,20 @@
 <div ng-controller='KlantenDetailsController' ng-init="index()" >
-        <a href="#/">Go back</a>
-        <h1>details van klant: {{klantdetail.id}}</h1>
+        
+    <h2>details van klant: <b>{{klantdetail.name}}</b></h2>
+        
         <ul>
-            <li>{{klantdetail.name}}</li>
-            <li>{{klantdetail}}</li>
+            <li><b>Klantnummer:</b> {{klantdetail.id}}</li>
+            <li><b>bedrijfsnaam:</b> {{klantdetail.company.name}}</li>
+            <li><b>vertegenwoordiger:</b> {{klantdetail.name}}</li>
         </ul>
+        
+        <h3>Gebruikersinfo</h3>
+        <ul>
+            <li><b>Gebruikersnaam:</b><span class="tab"></span> {{klantdetail.username}}</li>
+            <li><b>Eigen naam:</b><span class="tab"></span> {{klantdetail.name}}</li>
+            <li><b>Email:</b><span class="tab"></span> {{klantdetail.email}}</li>
+            <li><b>Adres:</b><span class="tab"></span> {{klantdetail.address.street}} {{klantdetail.address.suite}} {{klantdetail.address.city}}</li>
+            <li><b>Website:</b><span class="tab"></span> <a href="http://{{klantdetail.website}}">{{klantdetail.website}}</a></li>
+        </ul>
+        <a class="btn btn-default btn-lg" href="#/">Go back</a>
     </div>

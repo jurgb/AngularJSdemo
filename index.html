@@ -6,14 +6,24 @@
 </head>
 <body>
     <div id="header">
-        
-        <h1>Effe kijke of de pagina wel degelijk laad</h1>
+        <div class="container">
+            <img src="images/klanten.png" alt="klanten">
+            <h1>Onze klanten</h1>
+        </div>
     </div>
-    <div ng-view ng-animate="'animate'">
+    <div class="container">
         
-        
+        <div ng-view>
+
+
+        </div>
     </div>
-    
+    <div id="footer">
+        <div class="container">
+            <h5>AngularJS tutorial by:</h5>
+            <img src="images/jurgb-logo.png" alt="klanten">
+        </div>
+    </div>
     <script src="js/angular.js" type="text/javascript"></script>
     <script src="js/angular-route.js" type="text/javascript"></script>
     
@@ -21,5 +31,10 @@
     <script type="text/javascript" src="js/controllers/AngKlantenController.js"></script>
     <script type="text/javascript" src="js/controllers/AngKlantenDetailsController.js"></script>
     <script type="text/javascript" src="js/factories/KlantenAPI.js"></script>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 </body>
 </html>
